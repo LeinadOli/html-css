@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            display: flex;
+            align-items: start;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        div{
+            background-color: blueviolet;
+            flex-basis: calc(50% - 60px);
+            columns: 2 ;
+            column-rule: 4px dotted #ffffff;
+            column-gap: 50px;
+        }
+        div .oll{
+            column-span: all;
+            background-color: #ffffff;
+        }
+        span{
+            display: block;
+        }
+        /* .columns-example1 {
+            columns: 3;
+        }
+        .columns-example2 {
+            columns: 3 150px;
+        } */
+
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In explicabo nisi possimus adipisci numquam 
+            <h1 class="oll">Click here!</h1>
+            quibusdam at, illo eum, exercitationem corrupti officia sint iste? Necessitatibus hic maxime quod repellat. Eum, consequuntur.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam pariatur maiores quaerat aliquid quasi voluptatibus quis doloribus, provident cum consectetur officia similique deserunt cupiditate illo hic eum tempora debitis quae!
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam facilis ullam similique? Ex, dolores reprehenderit odio a incidunt voluptatem deleniti, fugit nam unde consectetur quis! Blanditiis, sunt? Similique, eum illum.
+        </div>
+        <figure>
+            <img src="imagens-galerias_44.jpg" alt="Cachorros aleatorios">
+            <figcaption>Cachorros aleatorios que eu achei</figcaption>
+        </figure>
+    </main>
+''    <!-- <section>
+        <div class="columns-example1">
+            <p> P Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec eros ut lacus placerat facilisis.</p>
+            <p> P Mauris non arcu libero. Proin nec sapien convallis, dictum eros a, fringilla justo.</p>
+            <p> P Phasellus ultricies quam nec augue vehicula, at commodo urna congue.</p>
+        </div>  
+        <div class="columns-example2">
+            <div> D Conteúdo da primeira coluna</div>
+            <div> D Conteúdo da segunda coluna</div>
+            <div> D Conteúdo da terceira coluna</div>
+        </div>
+              
+    </section> -->
+</body>
+</html>

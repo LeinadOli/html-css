@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(202, 202, 202);
+}
+h1{
+    color: #3f3f9c;
+}
+#id{
+    color: rgb(160, 84, 84);
+}
+.class{
+    color: #ffffff;
+}

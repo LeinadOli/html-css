@@ -1,0 +1,222 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: "Idroid";
+    src: url('../fontes/idroid.otf');
+}
+:root{
+    --color0: #c5ebd6;
+    --color1: #83e1ad;
+    --color2: #3ddc84;
+    --color3: #2fa866;
+    --color4: #1a5c37;
+    --color5: #063d1e;
+    
+    --fonte-padrão: Arial, Helvetica, sans-serif;
+    --font-destaque: "Bebas Neue", sans-serif;
+    --font-android: "Idroid", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--fonte-padrão);
+    background-color: var(--color0);
+}
+/* Cabeçalho da Página */
+header.header{
+    background-image: linear-gradient(to top,var(--color5), var(--color3));
+    color: #ffffff;
+    text-align: center;
+}
+header.header h1{
+    font-family: var(--font-destaque);
+    font-weight: normal;
+    padding: 20px 10px 10px 10px;
+    text-shadow: 2px 1px 2px #0000005e;
+}
+header.header p{
+    padding: 15px 15px 25px 15px;
+}
+/* Navegação do site. */
+nav.nav{
+    background-color: var(--color5);
+    padding-bottom: 3px;
+    box-shadow: 0 7px 7px #0000005e;
+}
+nav.nav div{
+    margin: auto;
+    max-width: 1368px;
+}
+nav.nav div ul{
+    display: flex;
+    padding: 0 10px;
+    gap: 3px;
+    align-items: center;
+}
+nav.nav div ul li{
+    list-style-type: none;
+}
+nav.nav div ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.5s;
+    font-weight: 600;
+}
+nav.nav div ul li a:hover{
+    background-color: var(--color3);
+    color: var(--color5);
+    transition: 0.5s;
+}
+@media screen and (max-width: 460px){
+    nav.nav div ul{
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    nav.nav div ul li{
+        flex-basis: 49%;
+        margin: 5px 0;
+    }
+}
+/* Estilo do conteúdo princiopal, junto das imagens. */
+main.main{
+    max-width: calc(1050px - 40px);
+    background-color: #ffffff;
+    margin: auto;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 10px #00000083;
+}
+main.main article h1{
+    margin: 10px 0 30px 0;
+    font-family: var(--font-android);
+    color: var(--color5);
+    font-size: 1.8em;
+}
+main.main article h2{
+    margin: 20px 0;
+    font-family: var(--font-android);
+    font-size: 1.5em;
+    color: var(--color5);
+    background-image: linear-gradient(to right, var(--color0), transparent);
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+main.main article p{
+    margin: 15px 0;
+    text-align: justify;
+    text-indent: 20px;
+}
+main.main article p strong{
+    color: var(--color5);
+    font-weight: bold;
+}
+main.main article p a{
+    color: var(--color5);
+    text-decoration: none;
+    font-weight: bold;
+}
+main.main article p a i{
+    font-size: 0.9em;
+}
+main.main article > picture > img{
+    width: 80%;
+    display: block;
+    margin: 20px auto;
+}
+main.main article > img{
+    display: block;
+    margin: auto;
+    width: 60%;
+    max-width: 300px;
+}
+@media screen and (max-width: 768px){
+    main.main article > picture > img{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 340px){
+    main.main article > picture > img{
+        width: 70%;
+    }
+}
+/* Vídeo da história do Android. */
+main.main article div.div-video{
+    background-color: var(--color4);
+    padding: 25px 35px;
+    margin: 20px -20px 25px -20px;
+}
+main.main article div.div-video div{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 8px;
+}
+main.main article div.div-video div iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+@media screen and (max-width:570px) {
+    main.main article div.div-video{
+        padding: 10px 20px;
+    }
+}
+/* Tabela de Versões do Android. */
+main.main article aside{
+    background-color: var(--color1);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 3px 3px 8px #0000005e;
+}
+main.main article aside h3{
+    margin: -20px -20px 0 -20px;
+    padding: 20px;
+    background-color: var(--color4);
+    color: #ffffff;
+    border-radius: 20px 20px 0 0;
+}
+main.main article aside ol{
+    list-style-position: inside;
+    list-style-type: none;
+    columns: 2;
+}
+main.main article aside ol li i{
+    letter-spacing: 4px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+@media screen and (max-width: 620px){
+    main.main article aside ol{
+        columns: 1;
+    }
+}
+/* Rodapé da Página. */
+footer.footer{
+    margin-top: 20px;
+    background-color: var(--color5);
+    color: #ffffff;
+    font-size: 0.7em;
+    padding: 10px;
+    text-align: center;
+}
+footer.footer p a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    transition: 0.5;
+}
+footer.footer p a:hover{
+    color: var(--color0);
+    transition: 0.5;
+    text-decoration: underline;
+}

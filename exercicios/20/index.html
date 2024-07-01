@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        .d{
+            font-size: 2em;
+            width: 160px;
+            height: 160px;
+            display: inline-block;
+            background-color: dimgray;
+        }
+        .d:hover{
+            background-color: yellow;
+        }
+       p > span{
+        display: none;
+        font-size: 1.5em;
+       }
+       p:hover > span{
+        display: block;
+       }
+       .teste{
+        width: 160px;
+        height: 160px;
+        background-color: steelblue;
+        font-size: 1.2em;
+       }
+       .teste:hover > div::after{
+        content: " Mundo";
+       }
+    </style>
+</head>
+<body>
+    <div class="d">01</div>
+    <div class="d">02</div>
+    <div class="d">03</div>
+    <div class="d">04</div>
+    <p>
+        Olá, Mundo!
+        <span>Estou chegando com tudo!</span>
+    </p>
+    <div class="teste">
+        <div>Olá,</div>
+    </div>
+</body>
+</html>
