@@ -1,0 +1,76 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+:root{
+    --font-header: "Passion One", sans-serif;
+    --font-text: "Sriracha", cursive;
+}
+html,body{
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header.header{
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+header.header > h1{
+    font-family: var(--font-header);
+    font-variant: small-caps;
+    font-size: min(10vw, 48px);
+    font-weight: 700;
+}
+header.header > p{
+    font-size: 0.8em;
+}
+header.header a, footer.footer a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+header.header a:hover, footer.footer a:hover{
+    text-decoration: underline;
+}
+main section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+main section p{
+    margin-left: 30px;
+    line-height: 2em;
+    padding: 10px;
+    font-size: min(5vw, 22px);
+    font-family: var(--font-text);
+    font-weight: 400;
+}
+main section.pag-no-img p:nth-child(1){
+    padding-bottom: 20px;
+}
+main section.pag-img{
+    box-shadow: inset 0px 6px 10px #0000006c;
+}
+main section.pag-img > p{
+    background-color: #00000048;
+    color: white;
+    display: inline-block;
+}
+main section.pag-img-1{
+    background: #242424 url('../pacote-d012/imagens/background001.jpg') center center / cover no-repeat fixed;
+}
+main section.pag-img-2{
+    background: #242424 url('../pacote-d012/imagens/background002.jpg') center center / cover no-repeat fixed;
+}
+footer.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 0.6em;
+    padding: 10px;
+}
