@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+            width: 40vw;
+            border-bottom: 4px solid rgb(65, 65, 65);
+            margin: auto;
+        }
+        caption{
+            padding: 20px;
+            border: 2px solid rgb(65, 65, 65);
+            font-size: 1.4em;
+        }
+        thead{
+            background-color: rgb(65, 65, 65);
+            color: white;
+        }
+        thead tr > td,th{
+            padding: 10px;
+            font-weight: bold;
+        }
+        td,th{
+            border: 2px solid rgb(65, 65, 65);
+        }
+        .center{
+            text-align: center;
+        }
+    </style>
+</head><!--"odd" é inpar / "evem" é par-->
+<body>
+    <h1>Tabelas com Semantica Html</h1>
+    <table>
+        <caption>Os 5 Estados mais Populosos do Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col" class="center">População</th>
+                <th scope="col" class="center">População em %</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="center">44 411 238</td>
+                <td class="center">21.88%</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="center">20 538 718</td>
+                <td class="center">10,11%</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="center">16 054 524</td>
+                <td class="center">7,91</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="center">14 141 626</td>
+                <td class="center">6,96%</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="center">11 444 380</td>
+                <td class="center">5,64%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td colspan="2" class="center"><strong>106 590 486</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
