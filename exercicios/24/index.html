@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFrame</title>
+    <style>
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div{
+            text-align: center;
+        }
+        a{
+            display: inline-block;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: darkgreen;
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 5px;
+            transition-duration: 1s;
+            transition-property: background-color;
+        }
+        a:hover{
+            background-color: lightgreen;
+            transition-duration: 0.5s;
+            transition-property: background-color;
+        }
+        iframe{
+            border-radius: 10px;
+            width: 70vw;
+            height: 50vh;
+            border: 2px solid black;
+            display: block;
+            margin: 20px auto;
+        }
+        p{
+            background-color: darkred;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: #e7e7e7;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="../23/index.html" target="frame">Página 01</a>
+        <a href="../23/table02.html" target="frame">Página 02</a>
+        <a href="../23/table03.html" target="frame">Página 03</a>
+        <a href="../23/table04.html" target="frame">Página 04</a>
+        <a href="../23/table05.html" target="frame">Página 05</a>
+        <a href="../23/table06.html" target="frame">Página 06</a>
+    </div>
+
+    <iframe name="frame" referrerpolicy="no-referrer" sandbox="sandbox" srcdoc="<h1 style='color: #444444; text-align: center; background-color: lightgreen; border-radius: 5px; padding: 5px;'>Escolha uma das pastas para serem exibidas no ifreme.</h1>" frameborder="0">
+        <p>Erro! Algo deu errado ao carregar a página. :|</p>
+    </iframe>
+</body>
+</html>
