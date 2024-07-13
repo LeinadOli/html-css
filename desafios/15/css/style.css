@@ -1,0 +1,108 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background:#242424 url('../imagens/fundo-madeira.jpg') no-repeat center center / cover;
+}
+main section.cell > iframe{
+    width: 50vw;
+    max-width: 311px;
+    height: 90vh;
+    max-height: 627px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+
+    border: solid transparent;
+    border-width: min(15vw, 70px) min(5vh, 30px);
+    border-image: url('../imagens/frame-iphone2.png') 13.5% 8% 12.5% 8%;    
+}
+main section.pag{
+    position: absolute;
+    right: 0;
+}
+main section.pag a{
+    display: block;
+    width: max(10vw, 40px);
+    height: max(10vw, 40px);
+    max-width: 70px;
+    max-height: 70px;
+    background-color: #242424;
+    margin: 20px 10px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+}
+main section.pag a:hover{
+    box-sizing: border-box;
+    position: relative;
+    right: 5px;
+    border: 1px solid white;
+    transition: border 1s linear;
+}
+main section.pag a:nth-child(1){
+    margin-top: 10px;
+    background: #242424 url('../imagens/logo-home.jpg') no-repeat center center / 100% 100%;
+}
+main section.pag a:nth-child(2){
+    background: #242424 url('../imagens/logo-youtube.jpg') no-repeat center center / 100% 100%;
+}
+main section.pag a:nth-child(3){
+    background: #242424 url('../imagens/logo-github.jpg') no-repeat center center / 100% 100%;
+}
+main section.pag a:nth-child(4){
+    background: #242424 url('../imagens/logo-instagram.jpg') no-repeat center center / 100% 100%;
+}
+main section.pag a:nth-child(5){
+    background: #242424 url('../imagens/logo-twitter.jpg') no-repeat center center / 100% 100%;
+}
+main section.pag a:nth-child(6){
+    background: #242424 url('../imagens/logo-facebook.jpg') no-repeat center center / 100% 100%;
+}
+
+@media screen and (max-width: 550px) {
+    main section.cell > iframe{
+        width: 65vw;
+        max-width: 370px;
+        height: 80vh;
+        left: 50%;
+        top: 45%;   
+    }
+    main section.pag{
+        width: 100vw;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+    }
+    main section.pag a{
+        display: inline-block;
+        margin: 5px;
+    }
+    main section.pag a:hover{
+        box-sizing: border-box;
+        position: relative;
+        right: 0px;
+        border: 1px solid white;
+        transition: border 1s linear;
+    }
+}
+@media screen and (max-width: 410px) {
+    main section.cell > iframe{
+        width: 90vw;
+    }
+}
+@media screen and (max-width: 322px) {
+    main section.cell > iframe{
+        height: 70vh;
+        top: 43%;
+        border-image: url('../imagens/frame-iphone2.png') 13.5% 8% 12.2% 8%;
+    }
+}
