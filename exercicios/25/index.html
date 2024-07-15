@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        form{
+            display: inline-block;
+        }
+        label,input{
+            display: block;
+        }
+        input{
+            margin-bottom: 10px;
+        }
+        progress,meter{
+            display: block;
+            margin-top: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" size="10" placeholder="Nome:">
+            <label for="isobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" id="isobrenome" required minlength="8" maxlength="30" size="10" placeholder="Sobrenome:">
+            
+            <h2>Checagens</h2>
+            <label for="ibol">Fotebol</label>
+            <input type="checkbox" name="bol" id="ibol">
+            <label for="ivol">Voleibol</label>
+            <input type="checkbox" name="vol" id="ivol">
+            <h3>Sexo</h3>
+            <label for="mas">Masculino</label>
+            <input type="radio" name="sexo" value="M" id="mas">
+            <label for="fem">Feminino</label>
+            <input type="radio" name="sexo" id="fem">
+
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+
+    <form action="script.js" method="get" autocomplete="off">
+        <fieldset>
+            <legend>Informações de Trabalho</legend>
+            <label for="iestado">Estados Federativos</label>
+            <select name="estados" id="iestado">
+                <option value="">Estados</option>
+                <optgroup label="Sudeste">
+                    <option value="MG">Minas Gerais </option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Nordeste">
+                    <option value="PI">Piauí</option>
+                    <option value="CE">Ceará</option>
+                    <option value="BA">Bahia</option>
+                </optgroup>
+            </select>
+            <label for="iprof">Profissão</label>
+            <input list="listprof" name="prof" id="iprof">
+            <datalist id="listprof" name="profi">
+                <option value="Administrados"></option>
+                <option value="Contabilista"></option>
+                <option value="Desenvoledor"></option>
+                <option value="Professor"></option>
+            </datalist>
+            <label for="imsg">Fale Conosco</label>
+            <textarea name="msg" id="msg" placeholder="Digite qui..."></textarea>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar Tudo">
+
+        </fieldset>
+    </form>
+
+    <meter value="2" min="0" max="10" low="2" high="8" optimum="6">2 out of 10</meter>
+
+
+    <progress id="progressBar" value="0" max="100"></progress>
+    <button onclick="increaseProgress()">Increase Progress</button>
+
+    <script>
+    function increaseProgress() {
+        var progressBar = document.getElementById('progressBar');
+        if (true) {
+            if(progressBar.value === progressBar.max){
+                window.alert('Progresso Concluido!\nA barra será resetada.')
+            progressBar.value = 0;
+            }
+            else /*if(progressBar.value < progressBar.max)*/{
+                progressBar.value += 10;
+
+            }
+        }
+    }
+</script>
+</body>
+</html>

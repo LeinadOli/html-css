@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+</head>
+<body>
+    <form action="script.php" method="get">
+        <fieldset>
+            <legend>Formulario com Output</legend>
+            <label for="inumer">Digite o Primeiro Número</label>
+            <input type="number" name="numer1" id="inumer" oninput="somar.innerHTML = Number(inumer.value) + Number(inumer2.value);">
+            <label for="inumer2">Digite o Segundo Número</label>
+            <input type="number" name="numer2" id="inumer2" oninput="somar.innerHTML = Number(inumer.value) + Number(inumer2.value);">
+            <output name="soma" id="somar">0</output>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>
