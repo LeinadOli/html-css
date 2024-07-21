@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/*Modo Paisagem*/
+
+body{
+    background-color: aqua;
+    text-align: center;
+}
+main h1::after{
+    content: ' landscape';
+}
+main img{
+    max-width: 64px;
+    margin-bottom: 20px;
+    transform: rotateZ(90deg);
+}
+a{
+    display: block;
+}

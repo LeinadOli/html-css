@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/*Estilos para impressoras*/
+header{
+    background-color: white;
+    color: black;
+}
+ul{
+    display: none;
+}
+main article{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3em;
+    margin-top: 5pc;
+}
+main article::after{
+    content: 'Esse artigo foi impresso através do site www.cursoemvideo.com';
+}

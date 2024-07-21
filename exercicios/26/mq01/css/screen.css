@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/*Estilo para telas de dispositivos*/
+header{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #242424;
+    color: white;
+}
+
+main article{
+    max-width: 768px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}

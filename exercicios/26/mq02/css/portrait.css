@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/*Modo Retrato*/
+
+body{
+    background-color: blue;
+    text-align: center;
+}
+main h1{
+    color: white;
+}
+main h1::after{
+    content: ' portrait';
+}
+main img{
+    max-width: 64px;
+    margin-bottom: 20px;
+    animation: chaqualhar 3s infinite;
+
+}
+a{
+    display: block;
+    color: white;
+}
+@keyframes chaqualhar {
+    0%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(20px);
+    }
+    60%{
+        transform: translateX(-25px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
