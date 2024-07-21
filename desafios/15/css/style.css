@@ -96,12 +96,12 @@ main section.pag a:nth-child(6){
 }
 @media screen and (max-width: 410px) {
     main section.cell > iframe{
-        width: 90vw;
+        width: 85vw;
     }
 }
 @media screen and (max-width: 322px) {
     main section.cell > iframe{
-        height: 70vh;
+        height: 65vh;
         top: 43%;
         border-image: url('../imagens/frame-iphone2.png') 13.5% 8% 12.2% 8%;
     }
