@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Mobile</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css" media="screen and (min-width: 768px)">
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <span id="iconMenu" class="material-symbols-outlined" onclick="abrirMenu()">menu</span>
+            <ul id="menuMobo">
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque maxime quibusdam vitae officiis exercitationem voluptatibus odio illo, voluptate excepturi iusto, error rerum sapiente sunt ea obcaecati eligendi accusamus? Odit, iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus nostrum eum quas nemo non. Optio quibusdam sint natus iure accusantium cupiditate minima repudiandae ratione, expedita numquam ut, maiores, doloremque accusamus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quia officia delectus. Cum repellendus illo culpa adipisci eum, quidem magnam modi perspiciatis. Cupiditate, nihil nobis. Quis magni delectus veniam voluptatem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, officia ipsa quia debitis alias provident error dolore asperiores ullam animi corporis unde et. Repellat aliquid nihil id quae non praesentium! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi ex nemo alias fugiat itaque. Harum magnam eius amet ratione aut totam doloremque quas saepe culpa provident, similique, nemo perferendis optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni explicabo neque debitis! Ex deleniti qui quasi, nam eos cumque nulla a, quod tenetur magnam maxime saepe illum soluta temporibus ut.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque maxime quibusdam vitae officiis exercitationem voluptatibus odio illo, voluptate excepturi iusto, error rerum sapiente sunt ea obcaecati eligendi accusamus? Odit, iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus nostrum eum quas nemo non. Optio quibusdam sint natus iure accusantium cupiditate minima repudiandae ratione, expedita numquam ut, maiores, doloremque accusamus.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque maxime quibusdam vitae officiis exercitationem voluptatibus odio illo, voluptate excepturi iusto, error rerum sapiente sunt ea obcaecati eligendi accusamus? Odit, iure. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus nostrum eum quas nemo non. Optio quibusdam sint natus iure accusantium cupiditate minima repudiandae ratione, expedita numquam ut, maiores, doloremque accusamus.</p>
+    </main>
+    <script>
+        const menuMobo = document.getElementById('menuMobo');
+        const iconMenu = document.getElementById('iconMenu');
+        function abrirMenu(){
+            if(menuMobo.style.display === 'block'){
+                menuMobo.style.display = 'none'
+                iconMenu.innerHTML = 'menu';
+                iconMenu.style.color = '#000000';
+            }
+            else{
+                menuMobo.style.display = 'block';
+                iconMenu.innerHTML = 'close';
+                iconMenu.style.color = '#b71515';
+
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+
+header{
+    text-align: left;
+}
+header h1{
+    text-align: center;
+}
+header nav span#iconMenu{
+    display: none;
+}
+header nav ul{
+    max-width: 1366px;
+    display: block !important;
+    margin: auto;
+}
+header nav ul li{
+    padding-bottom: 0;
+    display: inline-block;
+}
+header nav ul li a{
+    border: none;
+    border-top: 2px solid black;
+    border-radius: 0;
+}
+main{
+    width: auto;
+    max-width: 1100px;
+}
