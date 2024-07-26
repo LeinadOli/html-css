@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(to top, var(--color-1), var(--color-2));
+}
+main section{
+    display: flex;
+    width: 80vw;
+    max-width: 880px;
+}
+main section header.img-form{
+    flex-basis: 50%;
+    padding: 0;
+}
+main section form{
+    flex-basis: 50%;
+}
+@media screen and (min-width: 1124px) {
+    main section header.img-form{
+        order: 2;
+    }
+    main section form{
+        order: 1;
+    }
+}
