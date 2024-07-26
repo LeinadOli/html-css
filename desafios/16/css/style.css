@@ -5,6 +5,7 @@
     --color-1: #49a09d;
     --color-2: #5f2c82; 
     --color-3: #94cfcd;
+    --color-4: #ffffff;
 }
 .material-symbols-outlined {
     font-variation-settings:
@@ -26,7 +27,7 @@ main section{
     width: 70vw;
     max-width: 380px;
     max-height: 620px;
-    background-color: #ffffff;
+    background-color: var(--color-4);
     border-radius: 20px;
     overflow: hidden;
     position: absolute;
@@ -38,7 +39,7 @@ main section{
 main section header.img-form{
     width: 100%;
     padding: 30%;
-    background: #ffffff url('../img/metal.jpg') no-repeat left center / cover;
+    background:  var(--color-4) url('../img/metal.jpg') no-repeat left center / cover;
 }
 main section form{
     text-align: center;
@@ -59,7 +60,7 @@ main section form div{
 main section form div label{
     width: 10%;
     vertical-align: middle;
-    color: #ffffff;
+    color: var(--color-4);
 }
 main section form div input{
     width: 83%;
@@ -70,7 +71,7 @@ main section form div input{
     font-size: .9em;
 }
 main section form div input:focus{
-    background-color: #ffffff;
+    background-color: var(--color-4);
     border: none;
     outline: none;
 }
@@ -83,7 +84,7 @@ main section form button{
     border: 2px solid var(--color-1);
     border-radius: 10px;
     background-color: var(--color-1);
-    color: #ffffff;
+    color: var(--color-4);
     font-size: 1em;
     cursor: pointer;
 }
@@ -104,7 +105,7 @@ main section form a{
 }
 main section form a:hover{
     background-color: var(--color-3);
-    color: #ffffff;
+    color: var(--color-4);
     transition: .5s background-color;
 }
 main section form a span{
